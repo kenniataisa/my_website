@@ -1,92 +1,97 @@
-/* Importa uma fonte do Google Fonts para um visual mais limpo */
+/* Importa fonte moderna do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Estilos gerais para o corpo da página */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f4f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Container principal da calculadora */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #007bff, #6c63ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
 .calculator-container {
-    background-color: #ffffff;
-    padding: 2rem 3rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
 }
 
 h1 {
-    color: #333;
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
-    color: #666;
-    margin-bottom: 2rem;
+  color: #666;
+  margin-bottom: 1.5rem;
 }
 
-/* Agrupamento de label e input */
 .input-group {
-    margin-bottom: 1rem;
-    text-align: left;
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
 label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #555;
-    font-weight: bold;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 input[type="number"] {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
-/* Estilo do botão */
 button {
-    width: 100%;
-    padding: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-/* Área para exibir o resultado */
 .result-area {
-    margin-top: 2rem;
-    min-height: 50px; /* Garante espaço mesmo sem resultado */
+  margin-top: 1.5rem;
+  min-height: 50px;
 }
 
 #result {
-    color: #28a745;
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #28a745;
 }
 
-/* Estilo para mensagens de erro */
 #result.error {
-    color: #dc3545;
+  color: #dc3545;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
 }
