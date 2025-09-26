@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Hipotenusa</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculadora online para encontrar a hipotenusa de um triângulo retângulo usando o Teorema de Pitágoras.">
+  <title>Calculadora de Hipotenusa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator-container">
-        <h1>Calculadora de Hipotenusa</h1>
-        <p>Insira os valores dos dois catetos de um triângulo retângulo.</p>
-        
-        <div class="input-group">
-            <label for="catetoA">Cateto A:</label>
-            <input type="number" id="catetoA" placeholder="Ex: 3" min="0">
-        </div>
-        
-        <div class="input-group">
-            <label for="catetoB">Cateto B:</label>
-            <input type="number" id="catetoB" placeholder="Ex: 4" min="0">
-        </div>
-        
-        <button id="calculateBtn">Calcular</button>
-        
-        <div class="result-area">
-            <h2 id="result"></h2>
-        </div>
-    </div>
+  <main class="calculator-container">
+    <h1>Calculadora de Hipotenusa</h1>
+    <p>Insira os valores dos dois catetos para calcular a hipotenusa.</p>
 
-    <script src="script.js"></script>
+    <form id="calculatorForm">
+      <div class="input-group">
+        <label for="catetoA">Cateto A:</label>
+        <input type="number" id="catetoA" name="catetoA" placeholder="Ex: 3" min="0" step="any" required>
+      </div>
+
+      <div class="input-group">
+        <label for="catetoB">Cateto B:</label>
+        <input type="number" id="catetoB" name="catetoB" placeholder="Ex: 4" min="0" step="any" required>
+      </div>
+
+      <button type="submit" id="calculateBtn">Calcular</button>
+    </form>
+
+    <div class="result-area">
+      <h2 id="result"></h2>
+    </div>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por <strong>Kennia Taisa</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
